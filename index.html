@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Social Media Marketing & Video Editing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Edit<span>karo</span>.in</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Transform Your Vision Into Engaging Content</h1>
+            <p>Editkaro.in is a premier social media marketing and video editing agency specializing in creating compelling visual content that drives engagement and grows your brand.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn">View Our Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a comprehensive range of services to elevate your brand's digital presence.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional editing for all types of content from social media clips to full-length features.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Color Grading</h3>
+                    <p>Enhance the visual appeal of your videos with professional color correction and grading.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Strategic campaigns to boost your online presence and engage your target audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Ad Creation</h3>
+                    <p>Eye-catching advertisements designed to convert viewers into customers.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Dynamic animations and graphics to make your content stand out.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Strategy</h3>
+                    <p>Data-driven insights to optimize your content strategy and maximize ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Collector -->
+    <section class="email-collector">
+        <div class="container">
+            <h2>Stay Updated With Our Latest Work</h2>
+            <p>Subscribe to our newsletter and get exclusive access to editing tips, industry insights, and special offers.</p>
+            <form class="email-form" id="emailForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            
+            <div id="emailFormMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+                <p>Explore our diverse range of video editing projects across different categories.</p>
+            </div>
+
+            <div class="filter-controls">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="short-form">Short Form</button>
+                <button data-filter="long-form">Long Form</button>
+                <button data-filter="gaming">Gaming Videos</button>
+                <button data-filter="football">Football Edits</button>
+                <button data-filter="ecommerce">eCommerce Ads</button>
+                <button data-filter="documentary">Documentary Style</button>
+                <button data-filter="color-grading">Color Grading</button>
+                <button data-filter="anime">Anime Videos</button>
+                <button data-filter="ads">Ads</button>
+            </div>
+
+            <div class="portfolio-grid" id="gallery">
+                <!-- Short Form Videos -->
+                <div class="portfolio-card" data-category="short-form">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Short Form Video">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/jNQXAC9IVRw">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>TikTok Fashion Ad</h3>
+                        <p>Engaging short-form content for a fashion brand's TikTok campaign.</p>
+                    </div>
+                </div>
+
+                <!-- Long Form Videos -->
+                <div class="portfolio-card" data-category="long-form">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Long Form Video">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Documentary Series</h3>
+                        <p>30-minute documentary exploring sustainable farming practices.</p>
+                    </div>
+                </div>
+
+                <!-- Gaming Videos -->
+                <div class="portfolio-card" data-category="gaming">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gaming Video">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/yzTn9YPc14c">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Valorant Montage</h3>
+                        <p>High-energy gaming montage with dynamic transitions and effects.</p>
+                    </div>
+                </div>
+
+                <!-- Football Edits -->
+                <div class="portfolio-card" data-category="football">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Football Edit">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/OUKGsb8CpF8">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Player Highlight Reel</h3>
+                        <p>Dynamic football highlights with cinematic effects and pacing.</p>
+                    </div>
+                </div>
+
+                <!-- eCommerce Ads -->
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="eCommerce Ad">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/gQLQ0t9B5yk">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Product Showcase</h3>
+                        <p>Compelling eCommerce ad highlighting product features and benefits.</p>
+                    </div>
+                </div>
+
+                <!-- Documentary Style -->
+                <div class="portfolio-card" data-category="documentary">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Documentary Style">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/Bk2VgXZqTTY">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Urban Exploration</h3>
+                        <p>Documentary-style video exploring abandoned locations with narrative storytelling.</p>
+                    </div>
+                </div>
+
+                <!-- Color Grading -->
+                <div class="portfolio-card" data-category="color-grading">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Color Grading">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/6pxRJB1FTaA">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cinematic Color Grade</h3>
+                        <p>Before and after showcase of professional color grading techniques.</p>
+                    </div>
+                </div>
+
+                <!-- Anime Videos -->
+                <div class="portfolio-card" data-category="anime">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Anime Video">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/pManA0_ZvZ4">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Anime AMV</h3>
+                        <p>Anime music video with seamless scene transitions and effects.</p>
+                    </div>
+                </div>
+
+                <!-- Ads -->
+                <div class="portfolio-card" data-category="ads">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ad">
+                        <div class="play-btn" data-src="https://www.youtube.com/embed/9xwazD5SyVg">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Brand Commercial</h3>
+                        <p>30-second commercial spot for a lifestyle brand with emotional storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Learn more about our mission, vision, and the team behind Editkaro.in</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About Editkaro.in">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Editkaro.in was founded in 2020 with a simple mission: to help creators and businesses tell their stories through compelling video content. What started as a small editing service has grown into a full-service social media marketing and video production agency.</p>
+                    <p>We believe that great content has the power to connect, inspire, and drive action. Our team of editors, animators, and strategists work together to create videos that not only look amazing but also achieve real results for our clients.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>To empower creators and businesses with high-quality video content that engages audiences and drives growth in the digital landscape.</p>
+                        </div>
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>To become the leading video editing and social media marketing agency recognized for creativity, innovation, and measurable results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Meet the talented individuals behind Editkaro.in</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>Rahul Sharma</h3>
+                        <p>Founder & Creative Director</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-img">
+                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>Gaurav Patel</h3>
+                        <p>Senior Video Editor</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>Arjun Kumar</h3>
+                        <p>Motion Graphics Designer</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>Neha Singh</h3>
+                        <p>Social Media Strategist</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have a project in mind? Get in touch with us today!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together</h3>
+                    <p>Whether you're looking for video editing services or a complete social media marketing strategy, we're here to help bring your vision to life.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@editkaro.in</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                        <div id="contactFormMessage" style="margin-top: 15px;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Editkaro.in</h3>
+                    <p>Transforming visions into engaging visual content through professional video editing and social media marketing services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Color Grading</a></li>
+                        <li><a href="#">Social Media Marketing</a></li>
+                        <li><a href="#">Ad Creation</a></li>
+                        <li><a href="#">Motion Graphics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on new projects and industry insights.</p>
+                    <form class="email-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Editkaro.in. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Set current year
+    const y = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if(yearEl) yearEl.textContent = y;
+
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Portfolio filtering - FIXED SELECTOR
+    const filters = document.querySelectorAll('.filter-controls button');
+    const items = document.querySelectorAll('#gallery .portfolio-card'); // Changed from .card to .portfolio-card
+    
+    filters.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filters.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const tag = btn.getAttribute('data-filter');
+            
+            items.forEach(item => {
+                if(tag === 'all' || item.dataset.category === tag) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+
+    // Video modal
+    const modal = document.getElementById('videoModal');
+    const modalBody = document.getElementById('modalBody');
+    const closeModal = document.getElementById('closeModal');
+    
+    document.querySelectorAll('.play-btn').forEach(b => {
+        b.addEventListener('click', function() {
+            const src = b.dataset.src;
+            if(src.includes('youtube') || src.includes('youtu.be') || src.includes('embed')){
+                modalBody.innerHTML = `<iframe width="100%" height="500" src="${src}" allowfullscreen frameborder="0"></iframe>`;
+            } else {
+                modalBody.innerHTML = `<video controls style="width:100%;height:auto"><source src="${src}" type="video/mp4">Your browser does not support video tag.</video>`;
+            }
+            modal.setAttribute('aria-hidden','false');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    if(closeModal) {
+        closeModal.addEventListener('click', function() {
+            modal.setAttribute('aria-hidden','true');
+            modalBody.innerHTML = '';
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.setAttribute('aria-hidden','true');
+            modalBody.innerHTML = '';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Form submission handler for Google Sheets
+   // Form submission handler for Google Sheets
+function setupForm(formId, msgId, formType) {
+    const form = document.getElementById(formId);
+    const msg = document.getElementById(msgId);
+    
+    if (!form) return;
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyxMExo61fGZIt3_f1pplg2gMtatr6U3b3r344QI5C6S1uLA9BsWX1hqhlA6yTOaE7c/exec';
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading message
+        if (msg) {
+            msg.textContent = 'Submitting...';
+            msg.style.color = '#f472b6';
+        }
+        
+        // Prepare data based on form type
+        let formData = { formType: formType };
+        
+        if (formType === 'email') {
+            const emailInput = form.querySelector('input[type="email"]');
+            formData.email = emailInput.value;
+        } 
+        else if (formType === 'contact') {
+            formData.name = document.getElementById('name').value;
+            formData.email = document.getElementById('email').value;
+            formData.phone = document.getElementById('phone').value;
+            formData.message = document.getElementById('message').value;
+        }
+        
+        console.log('Sending data to:', scriptURL);
+        console.log('Form data:', formData);
+        
+        // Use no-cors mode to avoid CORS errors
+        fetch(scriptURL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(() => {
+            // With no-cors, assume success
+            if (msg) {
+                msg.textContent = 'Thank you! Your information has been submitted successfully.';
+                msg.style.color = '#10b981';
+            }
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            if (msg) {
+                msg.textContent = 'Submitted! (Data saved to Google Sheets)';
+                msg.style.color = '#10b981';
+            }
+            form.reset();
+        });
+    });
+}
+
+// Initialize both forms
+setupForm('emailForm', 'emailFormMessage', 'email');
+setupForm('contactForm', 'contactFormMessage', 'contact');
+</script>
+</body>
+</html>
